@@ -1,0 +1,108 @@
+/* === GLOBAL BODY === */
+body {
+  background-color: #e9ecef; /* abu terang, netral dan lembut */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* === WRAPPER DAN CONTAINER === */
+.wrapper-center {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  min-height: calc(100vh - 80px);
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+  max-width: 95%;
+  min-width: 320px;
+}
+
+/* === JUDUL === */
+h2 {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 25px;
+}
+
+/* === FORM INPUT & SELECT === */
+input, select {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* === TOMBOL === */
+button {
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #1b5e20;
+}
+
+/* === TABEL === */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+table th, table td {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+table th {
+  background-color: #2e7d32;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.navbar {
+  background-color: #2e7d32;
+  padding: 0; /* buang padding supaya tinggi rapi */
+  display: flex;
+  justify-content: center;
+  height: 50px; /* tinggi navbar */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 20px; /* padding kiri-kanan */
+  display: flex;
+  align-items: center;
+  height: 100%; /* ini kuncinya! */
+  transition: all 0.3s ease;
+  border-radius: 0;
+}
+
+.navbar a:hover {
+  background-color: white;       /* efek kotak putih penuh */
+  color: #2e7d32;                /* teks berubah jadi hijau tua */
+  text-decoration: none;
+  cursor: pointer;
+}
